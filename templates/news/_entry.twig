@@ -7,7 +7,7 @@
       <a href="../">Home</a>
     </li>
     <li>
-      <a href="../news">News</a>
+      <a href="/news">News</a>
     </li>
     <li>News Article Title</li>
   </ul>
@@ -25,7 +25,7 @@
         </div>
 
         <h1>{{ entry.title }}</h1>
-        <p class="byline">by Ryan Irelan</p>
+        <p class="byline">by {{ entry.author.getFullName() }}</p>
 
         {{ entry.newsBody }}
 
