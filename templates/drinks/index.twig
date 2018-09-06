@@ -29,7 +29,8 @@
             </td>
             <td>{{ entry.dateAdded | date() }}</td>
             <td>
-              <a href="/styles/index.html">Espresso</a>
+              {% set style = entry.style.one() %}
+              <a href="{{ style.url }}">{{ style.title }}</a>
             </td>
           </tr>
 
